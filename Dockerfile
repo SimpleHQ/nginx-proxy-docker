@@ -6,6 +6,8 @@ ENV REFRESHED_AT 2016-05-28
 ENV PORT 80
 ENV APP_SERVER app:5000
 
+
+COPY root-nginx.conf /etc/nginx/nginx.conf
 COPY nginx.conf.template /etc/nginx/conf.d/default.conf.template
 COPY run.sh /run.sh
 
